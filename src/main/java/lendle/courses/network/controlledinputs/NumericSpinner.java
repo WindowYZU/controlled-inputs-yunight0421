@@ -30,7 +30,12 @@ public class NumericSpinner {
         frame.setLayout(new FlowLayout());
         JSpinner spinner=new JSpinner();
         //create a SpinnerNumberModel
-        
+        SpinnerNumberModel model = new SpinnerNumberModel();
+        model.setMaximum(1087);
+        model.setMinimum(0);
+        model.setValue(587);
+        model.setStepSize(100);
+        spinner.setModel(model);
         ///////////////////////////////////////////////////
         frame.add(spinner);
         
